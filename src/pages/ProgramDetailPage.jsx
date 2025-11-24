@@ -6,7 +6,7 @@ function ProgramDetailPage() {
   const { programId } = useParams()
 
   const handleEnroll = () => {
-    const phoneNumber = '9579158374'; // Remove '+' for URL
+    const phoneNumber = '7066110033'; // Remove '+' for URL
     const message = `*ENROLLMENT INQUIRY*\n\n` +
                    `*Course:* ${program.title}\n` +
                    `*Duration:* ${program.duration}\n` +

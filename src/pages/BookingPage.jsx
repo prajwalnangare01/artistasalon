@@ -254,12 +254,20 @@ function BookingPage() {
     };
 
     const message = formatMessage();
-    const phoneNumber = '9579158374'; // Remove '+' and any spaces for the URL
+    
+    // Branch-specific WhatsApp numbers
+    const branchPhoneNumbers = {
+      'Law College Road': '7066110033',
+      'Vishal Nagar': '7038873333'
+    };
+    
+    const phoneNumber = branchPhoneNumbers[formData.branch] || '9579158374'; // Fallback to default if branch not found
     const encodedMessage = encodeURIComponent(message);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
 
     console.log('WhatsApp URL:', whatsappUrl); // Debug logging
     console.log('Original message:', message); // Debug logging
+    console.log('Branch:', formData.branch, 'Phone:', phoneNumber); // Debug logging
 
     // Open WhatsApp in a new window
     window.open(whatsappUrl, '_blank');

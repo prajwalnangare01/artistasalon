@@ -2,13 +2,15 @@ import { Link } from 'react-router-dom'
 import Logo from './Logo'
 
 function Footer() {
+  const currentYear = new Date().getFullYear();
+  
   return (
     <footer className="bg-background-light py-16">
       <div className="container mx-auto max-w-6xl px-4">
         <div className="grid grid-cols-1 gap-12 text-center md:grid-cols-4 md:text-left">
           <div>
             <h3 className="text-lg font-bold text-text-color">Salon Artista</h3>
-            <p className="mt-2 text-sm text-text-color/80">Crafting beauty, one client at a time.</p>
+            <p className="mt-2 text-sm text-text-color/80"> Where Beauty Meets Artistry</p>
           </div>
           <div>
             <h3 className="text-lg font-bold text-text-color">Explore</h3>
@@ -20,7 +22,7 @@ function Footer() {
               </li>
               <li>
                 <Link to="/staff" className="text-sm text-text-color/80 hover:text-primary">
-                  Our Team
+                  Our Staff
                 </Link>
               </li>
               <li>
@@ -35,16 +37,25 @@ function Footer() {
             <ul className="mt-4 space-y-2">
               <li>
                 <a href="mailto:info@salonartista.com" className="text-sm text-text-color/80 hover:text-primary">
-                  info@salonartista.com
+                  artistabysupriya@gmail.com
                 </a>
+              </li>
+              <li>
+                <p className="text-sm text-text-color/80">Office no. 01, A-Wing, Nirmiti Elite, Law College Rd, beside Starbucks, Shanti Sheela Society, Apex Colony, Erandwane, Pune, Maharashtra 411038</p>
               </li>
               <li>
                 <a href="tel:+1234567890" className="text-sm text-text-color/80 hover:text-primary">
-                  (123) 456-7890
+                  +91 7066110033
                 </a>
               </li>
+              
               <li>
-                <p className="text-sm text-text-color/80">123 Beauty Lane, Suite 100</p>
+                <p className="text-sm text-text-color/80">ARTISTA House Of Beauty, Shop No.4, New DP Road, Yashada Epic Commercials, Vishal Nagar, Pimple Nilakh, Pimpri-Chinchwad, Pune- 411027</p>
+              </li>
+              <li>
+              <a href="tel:+1234567890" className="text-sm text-text-color/80 hover:text-primary">
+                  +91 7038873333
+                </a>
               </li>
             </ul>
           </div>
@@ -65,7 +76,7 @@ function Footer() {
           </div>
         </div>
         <div className="mt-16 border-t border-text-color/10 pt-8 text-center text-sm text-text-color/60">
-          <p>© 2024 Salon Artista. All Rights Reserved.</p>
+          <p>© {currentYear} Salon Artista. All Rights Reserved.</p>
         </div>
       </div>
     </footer>
