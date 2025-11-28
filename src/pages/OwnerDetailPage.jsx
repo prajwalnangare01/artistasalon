@@ -23,7 +23,9 @@ function OwnerDetailPage() {
               {owner.role && <p className="mt-3 text-lg sm:text-xl text-white/80">{owner.role}</p>}
               <p className="mt-4 text-base sm:text-lg text-white/80">{owner.shortQuote}</p>
               <div className="mt-8 flex flex-wrap gap-4 text-sm font-semibold uppercase tracking-wider text-primary">
-                <span className="rounded-full bg-white px-4 py-2">{owner.experience} in beauty</span>
+                {owner.experience && (
+                  <span className="rounded-full bg-white px-4 py-2">{owner.experience}</span>
+              )}
                 <span className="rounded-full bg-white px-4 py-2">Artista founding family</span>
               </div>
             </div>

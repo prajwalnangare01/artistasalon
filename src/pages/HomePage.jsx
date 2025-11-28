@@ -76,7 +76,9 @@ function HomePage() {
                     {member.id === 'supriya-vadnere' && (
                       <p className={`text-primary/80 ${isMobile ? 'text-sm' : 'text-lg'}`}>Director</p>
                     )}
-                    <p className={`text-sm uppercase tracking-wide text-accent ${isMobile ? 'mt-1' : 'mt-2'}`}>{member.experience} experience</p>
+                    {member.experience && (
+                      <p className={`text-sm uppercase tracking-wide text-accent ${isMobile ? 'mt-1' : 'mt-2'}`}>{member.experience} experience</p>
+                    )}
                     <p className={`italic text-text-color/70 ${isMobile ? 'mt-2 text-xs' : 'mt-4 text-base'}`}>{member.shortQuote}</p>
                     <span className="mt-4 text-sm font-semibold text-accent group-hover:underline">View full profile →</span>
                   </Link>

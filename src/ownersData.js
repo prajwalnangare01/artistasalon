@@ -9,8 +9,8 @@ const owners = [
     name: 'Supriya Vadnere',
     role: 'Director',
     shortQuote: 'Visionary behind Artista—where beauty meets expertise.',
+    experience: '15+ years',
     image: supriyaPortrait,
-    experience: '10+ years',
     specialties: [
       'International hairstyling & aesthetics',
       'Client-centric consultations',
@@ -34,12 +34,35 @@ const owners = [
     ]
   },
   {
+    id: 'sunita-vadnere',
+    name: 'Sunita Vadnere',
+    role: '',
+    shortQuote: 'Timeless expertise rooted in 36+ years of care.',
+    image: sunitaPortrait,
+    experience: '36+ years',
+    specialties: [
+      'Traditional beauty mastery',
+      'Gentle, precise service rituals',
+      'Client comfort & trust-building'
+    ],
+    bio: [
+      'With over 36 years of experience, Sunita Vadnere embodies Artista’s timeless wisdom and gentle touch.',
+      'She blends traditional mastery with heartfelt warmth, making every client feel nurtured, confident, and beautiful.',
+      'Her patience, precision, and unwavering dedication have made her a respected pillar of the beauty community.'
+    ],
+    highlights: [
+      '36+ years crafting trusted beauty rituals',
+      'Beloved mentor with a heritage-rich approach',
+      'Sets the tone for Artista’s signature warmth'
+    ]
+  },
+  {
     id: 'janhvi-vadnere',
     name: 'Janhvi Vadnere',
     role: '',
     shortQuote: 'Bold artistry that blends luxury with precision.',
     image: janhaviPortrait,
-    experience: '12+ years',
+    experience: '10+ years',
     specialties: [
       'Modern luxury makeovers',
       'Detail-driven transformations',
@@ -62,7 +85,6 @@ const owners = [
     role: '',
     shortQuote: 'The calm strength keeping every Artista detail seamless.',
     image: vedantPortrait,
-    experience: '10+ years',
     specialties: [
       'Studio operations & logistics',
       'Client coordination',
@@ -77,29 +99,6 @@ const owners = [
       'Trusted pillar for the Artista client journey',
       'Creates seamless experiences across departments',
       'Leads with empathy, patience, and quiet excellence'
-    ]
-  },
-  {
-    id: 'sunita-vadnere',
-    name: 'Sunita Vadnere',
-    role: '',
-    shortQuote: 'Timeless expertise rooted in 36+ years of care.',
-    image: sunitaPortrait,
-    experience: '36+ years',
-    specialties: [
-      'Traditional beauty mastery',
-      'Gentle, precise service rituals',
-      'Client comfort & trust-building'
-    ],
-    bio: [
-      'With over 36 years of experience, Sunita Vadnere embodies Artista’s timeless wisdom and gentle touch.',
-      'She blends traditional mastery with heartfelt warmth, making every client feel nurtured, confident, and beautiful.',
-      'Her patience, precision, and unwavering dedication have made her a respected pillar of the beauty community.'
-    ],
-    highlights: [
-      '36+ years crafting trusted beauty rituals',
-      'Beloved mentor with a heritage-rich approach',
-      'Sets the tone for Artista’s signature warmth'
     ]
   }
 ]
