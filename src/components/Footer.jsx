@@ -41,7 +41,7 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <p className="text-sm text-text-color/80">Office no. 01, A-Wing, Nirmiti Elite, Law College Rd, beside Starbucks, Shanti Sheela Society, Apex Colony, Erandwane, Pune, Maharashtra 411038</p>
+                <p className="text-sm text-text-color/80">Office no. 01, A-Wing, Nirmiti Elite, Law College Rd, beside Starbucks, Shanti Sheela Society, Apex Colony, Erandwane, Pune, Maharashtra 411004</p>
               </li>
               <li>
                 <a href="tel:+1234567890" className="text-sm text-text-color/80 hover:text-primary">

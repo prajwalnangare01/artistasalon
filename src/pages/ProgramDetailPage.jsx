@@ -90,7 +90,7 @@ function ProgramDetailPage() {
     'hair-trichology': {
       title: "Diploma in Hair Trichology & Styling",
       description: "A specialized program blending the medical science of scalp health with the art of modern hairdressing. Designed for aspiring professionals who want to diagnose, treat, and style with authority.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC4PSttZnjThsURKdwWUDF1C5h0SB-yG_S2aP6gw-_-xdNBrMPQBney-GMqKAzheBaJit7yH8KTxLflxugD_jafBtKQQpSL6b4OoHjAW07Jaz7g9ulmj_rG9RZDFgbqSr4tboj7WaGnJvhqyttpZhDxxdsSVRd-uC2CDaOFzfYgtV_iYgvZ4yULevfIL8cXSetseIBDtjlmwRxgaLsYDT2AYtX3wGosykbAfZP5-UyaJB1Leds4wZn8v9qE3HmkrNzjIAgLF2pjSIs",
+      image: "https://cdn.shopify.com/s/files/1/0532/0998/9283/files/Exploring_the_Science_of_Trichology__A_Deep_Dive_into_Scalp_Health_480x480.jpg?v=1717157983",
       duration: "4 Months",
       focus: "Science & Artistry",
       certification: "Included",
@@ -143,8 +143,7 @@ function ProgramDetailPage() {
     },
     'beauty-cosmetology': {
       title: "Diploma in Skin Cosmetology",
-      description: "A comprehensive program covering everything from advanced skincare techniques to professional makeup artistry.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjvpw9kbbYCOktsoQfMVA0PfY0PsOIy-HWBfIbzJnSdx-_5l4lMmdBY3pzhTOIwbRVsEE2eWwZ4iKH1D45sbJ0rszsObm0nHfN2z_w5E-_L66j_bj-4TUWcqUX14Mj25brkt2u4hafK-Q00FoqFP4y9J03UCyKkcxZJ8sV2TzReNJ8IWQqrfdU3ntyY8OH_-5ywpaUqHy-X2HBvZY_dqFsCsE9n-8xrJQs3hI7IkXR_QuJ2s67CKd95_LM0fThpevA4Cy1Hl9NzG4",
+image: "https://www.neodermaskinclinic.com/treatments/skintherapy1.jpg",
       duration: "6 Months",
       focus: "Clinical & Aesthetic",
       certification: "Included",
@@ -198,7 +197,7 @@ function ProgramDetailPage() {
     'tattoos-piercing': {
       title: "Diploma in Tattoo Art & Body Piercing",
       description: "Designed for creative individuals who want to master the art and science of permanent body art. Learn to blend artistic vision with medical-grade safety standards.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAzykPdG1p8DRVaajkKvb3yQum783iJtJeh_MvMKGtZ497h1anihb7_DA1hobrjg7_mRVnDgHLXIZVwxVRM4crbpwcexprC2lDj6xmyc_goT2FJqedURjwDdS8KZd54TfmXUdakW6CgPf4qIjjQoHujyoszhgg8gCL6XX4NBBfUDj_CBBPRZt066xP-VaOdUnoCoq-9fqvy7KRfMejPc1Xc8MLj13qd07uwnjxLhNs9IQ6zgIMvxbTGgz0X6otSY9etdGz-n83mihM",
+      image: "https://media.istockphoto.com/id/1162623180/photo/process-of-creating-tattoo-in-form-of-black-flower.jpg?s=612x612&w=0&k=20&c=79iUS8RSYKXAmLfHkf9S3DgsKXUaj2-jEksKAWMerNA=",
       duration: "6 Months",
       focus: "Art & Safety",
       certification: "Dual Certificate",
@@ -252,7 +251,7 @@ function ProgramDetailPage() {
     'nail-art-diploma': {
       title: "Professional Diploma in Nail Art",
       description: "A comprehensive program designed to build professional skills in creative nail design and modern nail care techniques. Master both classic elegance and trending avant-garde styles.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAzykPdG1p8DRVaajkKvb3yQum783iJtJeh_MvMKGtZ497h1anihb7_DA1hobrjg7_mRVnDgHLXIZVwxVRM4crbpwcexprC2lDj6xmyc_goT2FJqedURjwDdS8KZd54TfmXUdakW6CgPf4qIjjQoHujyoszhgg8gCL6XX4NBBfUDj_CBBPRZt066xP-VaOdUnoCoq-9fqvy7KRfMejPc1Xc8MLj13qd07uwnjxLhNs9IQ6zgIMvxbTGgz0X6otSY9etdGz-n83mihM",
+      image: "https://nailboo.com/cdn/shop/articles/Manicure_2248b30f-65fd-4fb4-bd4b-296644a709e3.jpg?v=1754502555&width=1100",
       duration: "3 Months",
       focus: "Art & Extensions",
       certification: "Included",
@@ -306,7 +305,7 @@ function ProgramDetailPage() {
     'painting-crafting': {
       title: "Certificate in Painting & Creative Crafts",
       description: "Designed to unlock creativity and develop strong artistic fundamentals. Whether you are a beginner or building a portfolio, this course explores the endless possibilities of color and texture.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjvpw9kbbYCOktsoQfMVA0PfY0PsOIy-HWBfIbzJnSdx-_5l4lMmdBY3pzhTOIwbRVsEE2eWwZ4iKH1D45sbJ0rszsObm0nHfN2z_w5E-_L66j_bj-4TUWcqUX14Mj25brkt2u4hafK-Q00FoqFP4y9J03UCyKkcxZJ8sV2TzReNJ8IWQqrfdU3ntyY8OH_-5ywpaUqHy-X2HBvZY_dqFsCsE9n-8xrJQs3hI7IkXR_QuJ2s67CKd95_LM0fThpevA4Cy1Hl9NzG4",
+      image: "https://www.thesprucecrafts.com/thmb/fRiKQLuNA2JLZalLQwzxc50upto=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-922707682-5b90467bc9e77c0025931eef.jpg",
       duration: "3 Months",
       focus: "Fine Art & DIY",
       certification: "Certificate of Completion",
@@ -368,7 +367,7 @@ function ProgramDetailPage() {
         {/* Hero Section */}
         <div className="mx-auto max-w-5xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="w-full">
-            <div className="bg-cover bg-center flex min-h-[400px] flex-col justify-end overflow-hidden rounded-xl shadow-xl" style={{backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%), url("${program.image}")`}}>
+            <div className="flex min-h-[400px] flex-col justify-end overflow-hidden rounded-xl shadow-xl" style={{backgroundSize: '120%', backgroundPosition: 'center', backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 40%), url("${program.image}")`}}>
               <div className="p-8 md:p-12">
                 <h1 className="text-4xl font-bold tracking-tight text-white md:text-5xl">{program.title}</h1>
                 <p className="mt-2 max-w-2xl text-lg text-gray-200">{program.description}</p>

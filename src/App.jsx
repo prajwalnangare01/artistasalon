@@ -5,6 +5,7 @@ import StaffPage from './pages/StaffPage'
 import AcademicsPage from './pages/AcademicsPage'
 import ProgramDetailPage from './pages/ProgramDetailPage'
 import BookingPage from './pages/BookingPage'
+import OwnerDetailPage from './pages/OwnerDetailPage'
 import ScrollToTop from './components/ScrollToTop'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path="/academics" element={<AcademicsPage />} />
         <Route path="/academics/:programId" element={<ProgramDetailPage />} />
         <Route path="/booking" element={<BookingPage />} />
+        <Route path="/owners/:ownerId" element={<OwnerDetailPage />} />
       </Routes>
     </>
   )

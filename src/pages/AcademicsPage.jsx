@@ -1,6 +1,8 @@
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import cosmetologyImage from '../assets/images/cosmetology.png';
+
 
 function AcademicsPage() {
   const handleEnroll = (program) => {
@@ -25,31 +27,31 @@ function AcademicsPage() {
       id: 'beauty-cosmetology',
       title: "Beauty - Cosmetology",
       description: "Explore the world of beauty and cosmetology, from skincare to makeup application.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjvpw9kbbYCOktsoQfMVA0PfY0PsOIy-HWBfIbzJnSdx-_5l4lMmdBY3pzhTOIwbRVsEE2eWwZ4iKH1D45sbJ0rszsObm0nHfN2z_w5E-_L66j_bj-4TUWcqUX14Mj25brkt2u4hafK-Q00FoqFP4y9J03UCyKkcxZJ8sV2TzReNJ8IWQqrfdU3ntyY8OH_-5ywpaUqHy-X2HBvZY_dqFsCsE9n-8xrJQs3hI7IkXR_QuJ2s67CKd95_LM0fThpevA4Cy1Hl9NzG4"
+      image: "https://www.neodermaskinclinic.com/treatments/skintherapy1.jpg"
     },
     {
       id: 'hair-trichology',
       title: "Hair - Trichology",
       description: "Dive deep into the science of hair and scalp health with our trichology program.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuC4PSttZnjThsURKdwWUDF1C5h0SB-yG_S2aP6gw-_-xdNBrMPQBney-GMqKAzheBaJit7yH8KTxLflxugD_jafBtKQQpSL6b4OoHjAW07Jaz7g9ulmj_rG9RZDFgbqSr4tboj7WaGnJvhqyttpZhDxxdsSVRd-uC2CDaOFzfYgtV_iYgvZ4yULevfIL8cXSetseIBDtjlmwRxgaLsYDT2AYtX3wGosykbAfZP5-UyaJB1Leds4wZn8v9qE3HmkrNzjIAgLF2pjSIs"
+      image: "https://cdn.shopify.com/s/files/1/0532/0998/9283/files/Exploring_the_Science_of_Trichology__A_Deep_Dive_into_Scalp_Health_480x480.jpg?v=1717157983"
     },
     {
       id: 'tattoos-piercing',
       title: "Tattoos - Piercing",
       description: "Master the art of body modification, from intricate tattoo designs to safe piercing techniques.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAzykPdG1p8DRVaajkKvb3yQum783iJtJeh_MvMKGtZ497h1anihb7_DA1hobrjg7_mRVnDgHLXIZVwxVRM4crbpwcexprC2lDj6xmyc_goT2FJqedURjwDdS8KZd54TfmXUdakW6CgPf4qIjjQoHujyoszhgg8gCL6XX4NBBfUDj_CBBPRZt066xP-VaOdUnoCoq-9fqvy7KRfMejPc1Xc8MLj13qd07uwnjxLhNs9IQ6zgIMvxbTGgz0X6otSY9etdGz-n83mihM"
+      image: "https://media.istockphoto.com/id/1162623180/photo/process-of-creating-tattoo-in-form-of-black-flower.jpg?s=612x612&w=0&k=20&c=79iUS8RSYKXAmLfHkf9S3DgsKXUaj2-jEksKAWMerNA="
     },
     {
       id: 'nail-art-diploma',
       title: "Nail Art Diploma",
       description: "Unleash your creativity with professional training in nail art, manicures, and pedicures.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuAzykPdG1p8DRVaajkKvb3yQum783iJtJeh_MvMKGtZ497h1anihb7_DA1hobrjg7_mRVnDgHLXIZVwxVRM4crbpwcexprC2lDj6xmyc_goT2FJqedURjwDdS8KZd54TfmXUdakW6CgPf4qIjjQoHujyoszhgg8gCL6XX4NBBfUDj_CBBPRZt066xP-VaOdUnoCoq-9fqvy7KRfMejPc1Xc8MLj13qd07uwnjxLhNs9IQ6zgIMvxbTGgz0X6otSY9etdGz-n83mihM"
+      image: "https://nailboo.com/cdn/shop/articles/Manicure_2248b30f-65fd-4fb4-bd4b-296644a709e3.jpg?v=1754502555&width=1100"
     },
     {
       id: 'painting-crafting',
       title: "Painting & Crafting",
       description: "Develop your artistic voice and technical skills in various painting mediums and crafting techniques.",
-      image: "https://lh3.googleusercontent.com/aida-public/AB6AXuDjvpw9kbbYCOktsoQfMVA0PfY0PsOIy-HWBfIbzJnSdx-_5l4lMmdBY3pzhTOIwbRVsEE2eWwZ4iKH1D45sbJ0rszsObm0nHfN2z_w5E-_L66j_bj-4TUWcqUX14Mj25brkt2u4hafK-Q00FoqFP4y9J03UCyKkcxZJ8sV2TzReNJ8IWQqrfdU3ntyY8OH_-5ywpaUqHy-X2HBvZY_dqFsCsE9n-8xrJQs3hI7IkXR_QuJ2s67CKd95_LM0fThpevA4Cy1Hl9NzG4"
+      image: "https://www.thesprucecrafts.com/thmb/fRiKQLuNA2JLZalLQwzxc50upto=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/GettyImages-922707682-5b90467bc9e77c0025931eef.jpg"
     }
   ]
 
@@ -106,6 +108,8 @@ function AcademicsPage() {
             </div>
           </div>
         </section>
+
+
 
 
 

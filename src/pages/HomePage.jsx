@@ -3,13 +3,11 @@ import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import expertiseData from '../expertiseData.json'
-import supriyaBanner from '../assets/images/supriya_banner1.jpg'
-import janhaviBanner from '../assets/images/janhavi_banner2.jpg'
-import vedantBanner from '../assets/images/vedant_banner3.jpg'
-import sunitaBanner from '../assets/images/sunita_banner4.jpg'
+import employeeImage from '../assets/images/employeeimgforartista.png'
+import Logo from '../components/Logo'
+import owners from '../ownersData'
 
 function HomePage() {
-  const [currentSlide, setCurrentSlide] = useState(0)
   const [isMobile, setIsMobile] = useState(false)
   
   // Check screen size on mount and resize
@@ -24,27 +22,6 @@ function HomePage() {
     return () => window.removeEventListener('resize', checkScreenSize)
   }, [])
   
-  // Auto-advance slides every 5 seconds
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentSlide((prev) => (prev + 1) % 4) // Assuming 4 hero images
-    }, 5000)
-
-    return () => clearInterval(timer)
-  }, [])
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % 4) // Assuming 4 hero images
-  }
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + 4) % 4) // Assuming 4 hero images
-  }
-
-  const goToSlide = (index) => {
-    setCurrentSlide(index)
-  }
-
   // Helper function to truncate description for mobile
   const getMobileDescription = (description) => {
     if (!isMobile) return description
@@ -56,94 +33,58 @@ function HomePage() {
     return description
   }
 
-  const desktopImages = [
-    { image: supriyaBanner },
-    { image: janhaviBanner },
-    { image: vedantBanner },
-    { image: sunitaBanner }
-  ];
-
-  const mobileImages = [
-    { image: supriyaBanner },
-    { image: janhaviBanner },
-    { image: vedantBanner },
-    { image: sunitaBanner }
-  ];
-
   return (
     <div className="relative w-full">
       <Header />
+      <section className="relative bg-primary text-white pt-40 pb-12 sm:pt-32 sm:pb-16 md:pt-36 md:pb-20 lg:pt-40 lg:pb-24 fade-in-section">
+        <div className="absolute top-20 right-4 sm:top-28 md:top-32 sm:right-8">
+          <div className="bg-white rounded-full p-3 sm:p-4 shadow-lg shadow-primary/20">
+            <Logo />
+          </div>
+        </div>
+        <div className="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="text-left">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-accent mb-6">About Artista-House of Beauty</h2>
+            <p className="mb-4">Welcome to Artista- house of beauty, where beauty knows no boundaries! Our unisex salon is a heaven for individuals seeking top notch grooming and pampering services tailored to enhance your natural beauty. Step into a world of style and relaxation, where our skilled professionals are dedicated to providing you with an unforgettable salon experience.</p>
+            <p className="mb-4">At Artista we pride ourselves on offering a diverse range of services designed for both men and women. From trendy haircuts and hair colouring to rejuvenating facials and soothing massages, our expert stylists and therapists are here to cater to your unique needs. Whether you’re looking for a bold new look or a subtle refresh, we’ve got you covered.</p>
+            <p className="mb-4">We understand that each person is unique, and so are their beauty preferences. That’s why we offer personalised consultations to understand your individual style and beauty goals. Whether you’re preparing for a special occasion or simply treating yourself to a day of self-care, well tailor our services to meet your expectations.</p>
+            <p className="mb-4">We believe in using only the best products to ensure lasting results and maintain the health of your hair and skin. Our salon exclusively features high-quality, professional-grade products that are carefully selected to complement our commitment to excellence.</p>
+            <p className="mb-4">Ready for a transformation? Schedule your appointments at Artista and let our skilled team of stylist and therapists enhance your natural beauty. We offer convenient booking options, and our friendly staff is always ready to assist you.</p>
+            <p className="mb-8">Indulge in a unisex salon experience that goes beyond the ordinary. At Artista, beauty knows no boundaries- it’s an experience for everyone. Artista- The house of Beauty: Where Style Meets Serenity.</p>
+          </div>
+        </div>
+      </section>
       <main className="bg-background-light">
-        {/* Desktop Hero Section */}
-        {!isMobile && (
-          <section className="relative w-full mt-16 md:mt-24 lg:mt-28">
-            <section 
-              className="relative w-full bg-contain bg-center bg-no-repeat" 
-              style={{ 
-                backgroundImage: `url(${desktopImages[currentSlide].image})`,
-                backgroundSize: 'contain',
-                backgroundPosition: 'center center',
-                backgroundRepeat: 'no-repeat',
-                backgroundAttachment: 'scroll',
-                minHeight: '60vh',
-                maxHeight: '80vh',
-                paddingTop: '10vh'
-              }}
-            >
-              <button 
-                onClick={(e) => { e.preventDefault(); e.stopPropagation(); prevSlide(); }}
-                className="absolute left-6 md:left-8 top-[60%] z-50 -translate-y-1/2 rounded-full bg-white/20 p-3 text-white transition-colors hover:bg-white/40 backdrop-blur-sm"
-              >
-                <span className="material-symbols-outlined text-3xl md:text-4xl">chevron_left</span>
-              </button>
-              <button 
-                onClick={(e) => { e.preventDefault(); e.stopPropagation(); nextSlide(); }}
-                className="absolute right-6 md:right-8 top-[60%] z-50 -translate-y-1/2 rounded-full bg-white/20 p-3 text-white transition-colors hover:bg-white/40 backdrop-blur-sm"
-              >
-                <span className="material-symbols-outlined text-3xl md:text-4xl">chevron_right</span>
-              </button>
-              <div className="absolute bottom-7 left-1/2 z-50 -translate-x-1/2">
-                <div className="flex items-center gap-3 bg-black/20 rounded-full px-4 py-3 backdrop-blur-sm">
-                  {desktopImages.map((_, index) => (
-                    <button 
-                      key={index}
-                      onClick={(e) => { e.preventDefault(); e.stopPropagation(); goToSlide(index); }}
-                      className={`h-3 w-3 rounded-full transition-colors cursor-pointer ${
-                        index === currentSlide ? 'bg-accent' : 'bg-white/60 hover:bg-white/80'
-                      }`}
-                    ></button>
-                  ))}
-                </div>
-              </div>
-            </section>
-          </section>
-        )}
-
-        {/* Mobile Hero Section */}
-        {isMobile && (
-          <section className="relative w-full mt-16">
-            <div className="relative w-full">
-              <img 
-                src={mobileImages[currentSlide].image} 
-                alt="Hero Banner" 
-                className="w-full h-auto"
-              />
-            </div>
-            <div className="flex justify-center items-center mt-1">
-              <div className="flex items-center gap-1.5 bg-black/30 rounded-full px-2 py-1 backdrop-blur-sm">
-                {mobileImages.map((_, index) => (
-                  <button 
-                    key={index}
-                    onClick={(e) => { e.preventDefault(); e.stopPropagation(); goToSlide(index); }}
-                    className={`h-1.5 w-1.5 rounded-full transition-colors cursor-pointer ${
-                      index === currentSlide ? 'bg-accent' : 'bg-white/70 hover:bg-white/90'
-                    }`}
-                  ></button>
+        {/* Meet the Owners Section */}
+        <section className={isMobile ? 'py-12' : 'py-16 lg:py-24'}>
+          <div className={`container mx-auto max-w-7xl ${isMobile ? 'px-4' : 'px-6 lg:px-8'}`}>
+            <h2 className={`text-center font-bold text-text-color ${isMobile ? 'text-2xl' : 'text-3xl lg:text-5xl'}`}>Meet the Owners</h2>
+            <div className={`relative ${isMobile ? 'mt-8' : 'mt-12 lg:mt-16'}`}>
+              <div className={`grid ${isMobile ? 'grid-cols-1 gap-6' : 'grid-cols-1 lg:grid-cols-4 gap-8'}`}>
+                {owners.map((member) => (
+                  <Link
+                    key={member.id}
+                    to={`/owners/${member.id}`}
+                    className={`group flex flex-col items-center rounded-xl bg-white text-center shadow-lg transition-transform hover:-translate-y-1 ${isMobile ? 'p-6' : 'p-8'}`}
+                    aria-label={`Learn more about ${member.name}`}
+                  >
+                    <div
+                      className={`rounded-full bg-cover bg-center ring-2 ring-accent ring-offset-white ${isMobile ? 'h-24 w-24 ring-offset-2' : 'h-40 w-40 ring-offset-4'}`}
+                      style={{ backgroundImage: `url("${member.image}")` }}
+                    ></div>
+                    <h3 className={`font-bold text-primary ${isMobile ? 'mt-4 text-lg' : 'mt-6 text-2xl'}`}>{member.name}</h3>
+                    {member.id === 'supriya-vadnere' && (
+                      <p className={`text-primary/80 ${isMobile ? 'text-sm' : 'text-lg'}`}>Director</p>
+                    )}
+                    <p className={`text-sm uppercase tracking-wide text-accent ${isMobile ? 'mt-1' : 'mt-2'}`}>{member.experience} experience</p>
+                    <p className={`italic text-text-color/70 ${isMobile ? 'mt-2 text-xs' : 'mt-4 text-base'}`}>{member.shortQuote}</p>
+                    <span className="mt-4 text-sm font-semibold text-accent group-hover:underline">View full profile →</span>
+                  </Link>
                 ))}
               </div>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
 
         {/* Expertise Section */}
         <section className="bg-background-light py-8 sm:py-12 md:py-16 lg:py-24">
@@ -172,12 +113,12 @@ function HomePage() {
             <div className={`relative ${isMobile ? 'mt-8' : 'mt-12 lg:mt-16'}`}>
               <div className={`grid ${isMobile ? 'grid-cols-1 gap-6' : 'grid-cols-1 lg:grid-cols-3 gap-8'}`}>
                 {[
-                  { name: "RAVIKIRAN", role: "Hair Director", quote: isMobile ? "Visionary Hair Technical Head with 39+ Years of Experience" : "A visionary Hair Technical Head mastering advanced hair science, color technology, and precision artistry—leading the team with innovation, expertise, and unmatched technical excellence. 39+ Years of Experience", image: "https://picsum.photos/200/200?random=1" },
-                  { name: "OMKAR", role: "Hairstylist", quote: isMobile ? "Hair artistry expert with 11+ Years of Experience" : "A hair artistry expert with mastery in advanced cuts, color, and styling. Recognized for creating signature looks that blend trend with individuality. 11+ Years of Experience", image: "https://picsum.photos/200/200?random=2" },
-                  { name: "Ruchika", role: "Beauty Therapist", quote: isMobile ? "Skincare specialist with 10+ Years of Experience" : "A skincare perfectionist specializing in customised treatments that unlock natural radiance. Trusted for delivering consistent, visible results. 10+ Years of Experience", image: "https://picsum.photos/200/200?random=3" }
+                  { name: "RAVIKIRAN", role: "Hair Director", quote: isMobile ? "Visionary Hair Technical Head with 39+ Years of Experience" : "A visionary Hair Technical Head mastering advanced hair science, color technology, and precision artistry—leading the team with innovation, expertise, and unmatched technical excellence. 39+ Years of Experience", image: employeeImage },
+                  { name: "OMKAR", role: "Hairstylist", quote: isMobile ? "Hair artistry expert with 11+ Years of Experience" : "A hair artistry expert with mastery in advanced cuts, color, and styling. Recognized for creating signature looks that blend trend with individuality. 11+ Years of Experience", image: employeeImage },
+                  { name: "Ruchika", role: "Beauty Therapist", quote: isMobile ? "Skincare specialist with 10+ Years of Experience" : "A skincare perfectionist specializing in customised treatments that unlock natural radiance. Trusted for delivering consistent, visible results. 10+ Years of Experience", image: employeeImage }
                 ].map((member, index) => (
                   <div key={index} className={`flex flex-col items-center rounded-xl bg-white text-center shadow-lg ${isMobile ? 'p-6' : 'p-8'}`}>
-                    <img className={`rounded-full object-cover ring-2 ring-accent ring-offset-white ${isMobile ? 'h-24 w-24 ring-offset-2' : 'h-40 w-40 ring-offset-4'}`} src={member.image} alt={member.name} />
+                    <div className={`rounded-full bg-cover bg-center ring-2 ring-accent ring-offset-white ${isMobile ? 'h-24 w-24 ring-offset-2' : 'h-40 w-40 ring-offset-4'}`} style={{backgroundImage: `url("${member.image}")`}}></div>
                     <h3 className={`font-bold text-primary ${isMobile ? 'mt-4 text-lg' : 'mt-6 text-2xl'}`}>{member.name}</h3>
                     <p className={`text-primary/80 ${isMobile ? 'text-sm' : 'text-lg'}`}>{member.role}</p>
                     <p className={`italic text-text-color/70 ${isMobile ? 'mt-2 text-xs' : 'mt-4 text-base'}`}>{member.quote}</p>
