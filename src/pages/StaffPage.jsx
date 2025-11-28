@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
+import employeeImage from '../assets/images/employeeimgforartista.png'
 
 const StarIcon = () => (
   <svg fill="currentColor" viewBox="0 0 20 20" className="w-full h-full">
@@ -32,7 +33,7 @@ function StaffPage() {
       name: "RAVIKIRAN",
       role: "Hair Director",
       description: "A visionary Hair Technical Head mastering advanced hair science, color technology, and precision artistry—leading the team with innovation, expertise, and unmatched technical excellence. 39+ Years of Experience",
-      image: "/src/assets/images/employeeimgforartista.png",
+      image: employeeImage,
       category: "Hair Director",
       branch: "Law College Road",
       rating: 5.0
@@ -41,7 +42,7 @@ function StaffPage() {
       name: "OMKAR",
       role: "Hairstylist",
       description: "A hair artistry expert with mastery in advanced cuts, color, and styling. Recognized for creating signature looks that blend trend with individuality. 11+ Years of Experience",
-      image: "/src/assets/images/employeeimgforartista.png",
+      image: employeeImage,
       category: "Hairstylist",
       branch: "Law College Road",
       rating: 5.0
@@ -50,7 +51,7 @@ function StaffPage() {
       name: "Ruchika",
       role: "Beauty Therapist",
       description: "A skincare perfectionist specializing in customised treatments that unlock natural radiance. Trusted for delivering consistent, visible results. 10+ Years of Experience",
-      image: "/src/assets/images/employeeimgforartista.png",
+      image: employeeImage,
       category: "Beauty Therapist",
       branch: "Law College Road",
       rating: 4.8
@@ -59,7 +60,7 @@ function StaffPage() {
       name: "Chetan",
       role: "Hairstylist",
       description: "Precision-driven hair expert known for transforming every look with clean cuts, advanced styling, and trend-focused creativity. 10+ Years of Experience",
-      image: "/src/assets/images/employeeimgforartista.png",
+      image: employeeImage,
       category: "Hairstylist",
       branch: "Law College Road",
       rating: 4.8
@@ -68,7 +69,7 @@ function StaffPage() {
       name: "Saqlain",
       role: "Hairstylist",
       description: "A master of hair artistry delivering flawless makeovers, seamless styling, and signature looks tailored to every client. 7+ Years of Experience",
-      image: "/src/assets/images/employeeimgforartista.png",
+      image: employeeImage,
       category: "Hairstylist",
       branch: "Law College Road",
       rating: 4.9
@@ -77,7 +78,7 @@ function StaffPage() {
       name: "Naushad",
       role: "Beauty Therapist",
       description: "Detail-focused beautician delivering flawless grooming, expert skin care, and consistently polished results with professional precision. 5+ Years of Experience",
-      image: "/src/assets/images/employeeimgforartista.png",
+      image: employeeImage,
       category: "Beauty Therapist",
       branch: "Law College Road",
       rating: 4.8
@@ -86,7 +87,7 @@ function StaffPage() {
       name: "Rajashree",
       role: "Beauty Therapist",
       description: "Skincare and beauty specialist known for gentle technique, clean finishes, and treatments that leave every client glowing with confidence. 16+ Years of Experience",
-      image: "/src/assets/images/employeeimgforartista.png",
+      image: employeeImage,
       category: "Beauty Therapist",
       branch: "Law College Road",
       rating: 4.8

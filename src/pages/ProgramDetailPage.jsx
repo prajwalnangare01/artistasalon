@@ -435,33 +435,6 @@ function ProgramDetailPage() {
             </div>
           </div>
 
-
-
-          {/* Testimonials */}
-          <div className="mt-16">
-            <h2 className="text-center text-3xl font-bold tracking-tight text-primary">What Our Graduates Say</h2>
-            <div className="mt-8 grid grid-cols-1 gap-8 md:grid-cols-2">
-              {program.testimonials.map((testimonial, index) => (
-                <div key={index} className="rounded-xl bg-white/50 p-8 shadow-xl">
-                  <div className="flex items-center">
-                    <img className="h-14 w-14 rounded-full object-cover" src={testimonial.image} alt={testimonial.name} />
-                    <div className="ml-4">
-                      <p className="font-bold text-text-color">{testimonial.name}</p>
-                      <div className="flex items-center">
-                        {[...Array(5)].map((_, i) => (
-                          <span key={i} className="text-2xl text-accent">
-                            ★
-                          </span>
-                        ))}
-                      </div>
-                    </div>
-                  </div>
-                  <p className="mt-4 text-text-color">"{testimonial.quote}"</p>
-                </div>
-              ))}
-            </div>
-          </div>
-
           {/* CTA */}
         
         </div>
